@@ -12,6 +12,8 @@ html{
 body{
     background: #080808;
     color: #fff;
+    position: relative;
+    min-height: 100vh;
 }
 
 #header{
@@ -288,6 +290,10 @@ nav ul li a:hover::after{
 }
 
 /* ---contact-- */
+#contact{
+    padding: 50px 0;
+}
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -358,7 +364,7 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 
