@@ -1,0 +1,127 @@
+.about {
+  background: var(--white);
+}
+
+body.dark-mode .about {
+  background: var(--darker-bg);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-frame {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.image-frame::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--gradient-1);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: saturate(1.05);
+  transition: transform 0.6s ease;
+}
+
+.image-frame:hover .profile-photo {
+  transform: scale(1.04);
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.about-text p {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(224,231,255,0.9) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .stat {
+  background: linear-gradient(135deg, rgba(30,41,59,0.6) 0%, rgba(30,27,75,0.6) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+}
+
+.stat h4 {
+  font-size: 2.5rem;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .image-frame {
+    width: 300px;
+    height: 350px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
