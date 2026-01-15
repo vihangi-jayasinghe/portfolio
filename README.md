@@ -83,7 +83,3 @@ To change the color scheme, edit the CSS variables in `src/styles/global.css`:
 - Webpack 5
 - Babel
 - Modern CSS (Flexbox & Grid)
-
-## License
-
-MIT License - feel free to use this portfolio for your own projects!
