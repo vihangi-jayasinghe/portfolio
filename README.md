@@ -14,7 +14,7 @@ A beautiful, responsive portfolio website built with React, HTML, CSS, and JavaS
 
 - **Hero** - Eye-catching introduction with animated elements
 - **About** - Personal information and statistics
-- **Skills** - Technical skills with progress bars
+- **Skills** - Technical skills
 - **Projects** - Showcase of your work
 - **Contact** - Contact form and social links
 
