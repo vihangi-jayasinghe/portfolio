@@ -36,10 +36,10 @@ function Hero() {
             Passionate about clean code and user experience.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary glow-btn" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
+            {/* <button className="btn btn-primary glow-btn" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
               <span>View My Work</span>
               <span className="btn-icon">→</span>
-            </button>
+            </button> */}
             <button className="btn btn-secondary glass-btn" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
               <span>Contact Me</span>
               <span className="btn-icon">✉</span>
