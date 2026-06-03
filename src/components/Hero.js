@@ -51,14 +51,6 @@ function Hero() {
             <div className="photo-frame">
               <img src={myPic2} alt="Portrait of Vihangi Jayasinghe" className="hero-photo" />
             </div>
-            <div className="floating-card card-1">💻</div>
-            <div className="floating-card card-2">🎨</div>
-            <div className="floating-card card-3">⚡</div>
-            <div className="floating-card card-4">🚀</div>
-            <div className="circle circle-1"></div>
-            <div className="circle circle-2"></div>
-            <div className="circle circle-3"></div>
-            <div className="glow-effect"></div>
           </div>
         </div>
       </div>

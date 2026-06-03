@@ -41,14 +41,6 @@ function Projects() {
       image: work4,
     //   demoUrl: '#',
       sourceUrl: 'https://github.com/vihangi-jayasinghe/Online-Tour-Guide-system.git'
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'A modern portfolio website showcasing projects and skills with smooth animations and responsive design.',
-      technologies: ['React', 'Node.js', 'CSS3'],
-      image: work5,
-    //   demoUrl: '#',
-      sourceUrl: 'https://github.com/vihangi-jayasinghe/portfolio.git'
     }
   ];
 
